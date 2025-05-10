@@ -6,8 +6,8 @@ This project is a URL shortener service built with FastAPI. It allows users to s
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Alexstom007/url-shortener.git
+   cd url-shortener
    ```
 
 2. Create a `.env` file in the root directory with the following content:
@@ -20,15 +20,19 @@ This project is a URL shortener service built with FastAPI. It allows users to s
    DB_ECHO=True
    ```
 
-3. Build the Docker image:
+3. Build and run the Docker containers:
    ```bash
-   docker build -t url-shortener .
+   docker-compose up --build
    ```
 
-4. Run the Docker container:
-   ```bash
-   docker run -p 8080:8080 url-shortener
-   ```
+## Features
+
+- URL shortening with unique identifiers
+- Redirect to original URLs
+- PostgreSQL database for persistent storage
+- Docker containerization
+- Environment variable configuration
+- FastAPI with automatic API documentation
 
 ## Usage
 
@@ -52,6 +56,7 @@ This project is a URL shortener service built with FastAPI. It allows users to s
 
 After starting the containers, the application will be available at:
 - http://localhost:8080
+- API documentation: http://localhost:8080/docs
 
 ## Author
 
