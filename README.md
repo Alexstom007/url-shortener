@@ -2,6 +2,22 @@
 
 This project is a URL shortener service built with FastAPI. It allows users to shorten URLs and retrieve the original URLs using a short identifier.
 
+## Requirements
+
+- Python 3.11
+- Docker
+- FastAPI
+- PostgreSQL
+
+## Features
+
+- URL shortening with unique identifiers
+- Redirect to original URLs
+- PostgreSQL database for persistent storage
+- Docker containerization
+- Environment variable configuration
+- FastAPI with automatic API documentation
+
 ## Installation
 
 1. Clone the repository:
@@ -25,15 +41,6 @@ This project is a URL shortener service built with FastAPI. It allows users to s
    docker-compose up --build
    ```
 
-## Features
-
-- URL shortening with unique identifiers
-- Redirect to original URLs
-- PostgreSQL database for persistent storage
-- Docker containerization
-- Environment variable configuration
-- FastAPI with automatic API documentation
-
 ## Usage
 
 ### Endpoints
@@ -44,13 +51,6 @@ This project is a URL shortener service built with FastAPI. It allows users to s
 
 - **GET /{short_id}**: Retrieve the original URL.
   - Response: Redirects to the original URL with a 307 status code.
-
-## Requirements
-
-- Python 3.11
-- Docker
-- FastAPI
-- PostgreSQL
 
 ## Application Access
 
